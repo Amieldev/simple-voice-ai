@@ -1,0 +1,64 @@
+.player-container{
+    width:300px;
+    height:360px;
+    position:fixed;
+    top:36%;left:50%;
+    margin:-150px;
+}
+.text-box{
+    outline:none;
+    resize:none;
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:0px;top:0px;
+    border-radius:10px;
+    box-shadow:inset 3px 3px 5px rgba(0,0,0,0.3),
+    -3px -3px 5px rgb(255,255,255),
+    3px 3px 5px rgba(0,0,0,0.3);
+}
+.play-pause-btn{
+    outline:none;
+    color:white;
+    position:absolute;
+    left:50%;bottom:0px;
+    margin:-10px;
+    width:50px;
+    height:50px;
+    border:silver 1px solid;
+    background:#ff0066;
+    border-radius:5px;
+    box-shadow:2px 2px 2px rgba(0,0,0,0.3),
+    -2px -2px 2px white;
+}
+[type="range"]{
+    position:absolute;
+    left:50%;
+    margin:-100px;
+    width:200px;
+    height:25px;
+    border-radius:20px;
+    -webkit-appearance:none;
+    background:linear-gradient(0deg,cyan,#08c0ff);
+    overflow:hidden;
+    box-shadow:2px 2px 2px rgba(0,0,0,0.3),
+    -2px -2px 2px white;
+}
+[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:25px;height:25px;
+    border:8px solid #3d3d3d;
+    border-radius:50%;
+    background:white;
+    box-shadow:100px 0 0 90px white;
+    cursor:pointer;
+}
+.volume{
+    bottom:35%;
+}
+.rate{
+    bottom:30%;
+}
+.pitch{
+    bottom:25%;
+}

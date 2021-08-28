@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css"/>
+<head>
+    <meta name="theme-color" content="#ff0066">
+<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1"/>
+	<title>Simple Voice Ai</title>
+</head>
+    <style>
+.offline{
+	background:linear-gradient(-45deg,cyan,cyan,#ff0066,#ff0066);
+	width:300px;height:50px;
+	font-size:30px;font-family:cursive;color:white;
+	border:2px solid black;border-radius:20px;
+	box-shadow:2px 2px silver;
+}
+        .retry{
+            color:lightgray;
+            width:100px;height:50px;
+            border:none;border-radius:3px;
+            background:linear-gradient(-45deg,cyan,cyan,#ff0066,#ff0066);
+            box-shadow:3px 3px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+<body>
+<center>
+<h1 class="offline">No-Connection :(</h1>
+</center>
+<br><br><br><br><br><br><br><br><br><br><br>
+<center>
+<button class="retry">Retry</button>
+</center>
+</body>
+<script>
+const retry=document.querySelector(".retry");
+retry.onclick=()=>{
+    if(navigator.onLine){
+        window.location="index.html"
+    }else{
+        alert("You are still offline.");
+    }
+}
+</script>
+</html>
